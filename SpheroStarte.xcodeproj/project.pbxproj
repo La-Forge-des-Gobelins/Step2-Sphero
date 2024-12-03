@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		611091912CEF75B2008E4977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611091902CEF75B2008E4977 /* AppDelegate.swift */; };
+		611091932CEF75B2008E4977 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611091922CEF75B2008E4977 /* SceneDelegate.swift */; };
+		611091952CEF75B2008E4977 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611091942CEF75B2008E4977 /* ViewController.swift */; };
+		611091982CEF75B2008E4977 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 611091972CEF75B2008E4977 /* Base */; };
+		6110919A2CEF75B4008E4977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 611091992CEF75B4008E4977 /* Assets.xcassets */; };
+		6110919D2CEF75B4008E4977 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6110919C2CEF75B4008E4977 /* Base */; };
+		6110926C2CEF7635008E4977 /* CGContext+GraphLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092302CEF7635008E4977 /* CGContext+GraphLines.swift */; };
+		6110926D2CEF7635008E4977 /* GraphSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092312CEF7635008E4977 /* GraphSegment.swift */; };
+		6110926E2CEF7635008E4977 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092322CEF7635008E4977 /* GraphView.swift */; };
+		6110926F2CEF7635008E4977 /* BB8Toy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092342CEF7635008E4977 /* BB8Toy.swift */; };
+		611092702CEF7635008E4977 /* SensorControlV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092352CEF7635008E4977 /* SensorControlV1.swift */; };
+		611092712CEF7635008E4977 /* SpheroV1Toy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092362CEF7635008E4977 /* SpheroV1Toy.swift */; };
+		611092722CEF7635008E4977 /* SpheroV1ToyCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092372CEF7635008E4977 /* SpheroV1ToyCore.swift */; };
+		611092732CEF7635008E4977 /* SPRKToy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092382CEF7635008E4977 /* SPRKToy.swift */; };
+		611092742CEF7635008E4977 /* BB9EToy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110923A2CEF7635008E4977 /* BB9EToy.swift */; };
+		611092752CEF7635008E4977 /* BoltToy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110923B2CEF7635008E4977 /* BoltToy.swift */; };
+		611092762CEF7635008E4977 /* MiniToy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110923C2CEF7635008E4977 /* MiniToy.swift */; };
+		611092772CEF7635008E4977 /* R2D2Toy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110923D2CEF7635008E4977 /* R2D2Toy.swift */; };
+		611092782CEF7635008E4977 /* SensorControlV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110923E2CEF7635008E4977 /* SensorControlV2.swift */; };
+		611092792CEF7635008E4977 /* SpheroV2Toy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110923F2CEF7635008E4977 /* SpheroV2Toy.swift */; };
+		6110927A2CEF7635008E4977 /* SpheroV2ToyCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092402CEF7635008E4977 /* SpheroV2ToyCore.swift */; };
+		6110927B2CEF7635008E4977 /* SensorControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092422CEF7635008E4977 /* SensorControl.swift */; };
+		6110927C2CEF7635008E4977 /* Toy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092432CEF7635008E4977 /* Toy.swift */; };
+		6110927D2CEF7635008E4977 /* ToyProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092442CEF7635008E4977 /* ToyProtocols.swift */; };
+		6110927E2CEF7635008E4977 /* ToyBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092462CEF7635008E4977 /* ToyBox.swift */; };
+		6110927F2CEF7635008E4977 /* CBUUID+SpheroUUIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092482CEF7635008E4977 /* CBUUID+SpheroUUIDs.swift */; };
+		611092802CEF7635008E4977 /* CollisionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110924A2CEF7635008E4977 /* CollisionData.swift */; };
+		611092812CEF7635008E4977 /* PowerStateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110924B2CEF7635008E4977 /* PowerStateResponse.swift */; };
+		611092822CEF7635008E4977 /* SensorCommandResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110924C2CEF7635008E4977 /* SensorCommandResponse.swift */; };
+		611092832CEF7635008E4977 /* SensorCommandResponseV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110924D2CEF7635008E4977 /* SensorCommandResponseV2.swift */; };
+		611092842CEF7635008E4977 /* SensorMaskCommandResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110924E2CEF7635008E4977 /* SensorMaskCommandResponse.swift */; };
+		611092852CEF7635008E4977 /* ShouldActionCompleteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110924F2CEF7635008E4977 /* ShouldActionCompleteResponse.swift */; };
+		611092862CEF7635008E4977 /* VersionsCommandResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092502CEF7635008E4977 /* VersionsCommandResponse.swift */; };
+		611092872CEF7635008E4977 /* CommandV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092522CEF7635008E4977 /* CommandV1.swift */; };
+		611092882CEF7635008E4977 /* CommandV1Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092532CEF7635008E4977 /* CommandV1Operation.swift */; };
+		611092892CEF7635008E4977 /* CommandV1Sequencer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092542CEF7635008E4977 /* CommandV1Sequencer.swift */; };
+		6110928A2CEF7635008E4977 /* CommandOperationV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092562CEF7635008E4977 /* CommandOperationV2.swift */; };
+		6110928B2CEF7635008E4977 /* CommandSequencerV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092572CEF7635008E4977 /* CommandSequencerV2.swift */; };
+		6110928C2CEF7635008E4977 /* CommandV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092582CEF7635008E4977 /* CommandV2.swift */; };
+		6110928D2CEF7635008E4977 /* SensorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110925A2CEF7635008E4977 /* SensorUtils.swift */; };
+		6110928E2CEF7635008E4977 /* Color+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110925C2CEF7635008E4977 /* Color+Utils.swift */; };
+		6110928F2CEF7635008E4977 /* Double+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110925D2CEF7635008E4977 /* Double+Utils.swift */; };
+		611092902CEF7635008E4977 /* SDKUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110925E2CEF7635008E4977 /* SDKUtils.swift */; };
+		611092912CEF7635008E4977 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110925F2CEF7635008E4977 /* String+Utils.swift */; };
+		611092922CEF7635008E4977 /* SharedToyBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092612CEF7635008E4977 /* SharedToyBox.swift */; };
+		611092942CEF7635008E4977 /* LocatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092652CEF7635008E4977 /* LocatorViewController.swift */; };
+		611092952CEF7635008E4977 /* SpheroAimingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092662CEF7635008E4977 /* SpheroAimingViewController.swift */; };
+		611092962CEF7635008E4977 /* SpheroDirectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092672CEF7635008E4977 /* SpheroDirectionViewController.swift */; };
+		611092972CEF7635008E4977 /* SpheroLedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092682CEF7635008E4977 /* SpheroLedsViewController.swift */; };
+		611092982CEF7635008E4977 /* SpheroSensorControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092692CEF7635008E4977 /* SpheroSensorControlViewController.swift */; };
+		611092A32CEF767C008E4977 /* FFNN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110929A2CEF767C008E4977 /* FFNN.swift */; };
+		611092A42CEF767C008E4977 /* FFNN+Metal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110929B2CEF767C008E4977 /* FFNN+Metal.swift */; };
+		611092A52CEF767C008E4977 /* FFNN+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110929C2CEF767C008E4977 /* FFNN+Storage.swift */; };
+		611092A62CEF767C008E4977 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110929D2CEF767C008E4977 /* Matrix.swift */; };
+		611092A72CEF767C008E4977 /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110929E2CEF767C008E4977 /* Operations.swift */; };
+		611092A82CEF767C008E4977 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110929F2CEF767C008E4977 /* Random.swift */; };
+		611092A92CEF767C008E4977 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092A02CEF767C008E4977 /* Storage.swift */; };
+		611092AA2CEF767C008E4977 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092A12CEF767C008E4977 /* Vector.swift */; };
+		611092AC2CEF768D008E4977 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611092AB2CEF768C008E4977 /* Helper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6110918D2CEF75B2008E4977 /* SpheroStarte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpheroStarte.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		611091902CEF75B2008E4977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		611091922CEF75B2008E4977 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		611091942CEF75B2008E4977 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		611091972CEF75B2008E4977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		611091992CEF75B4008E4977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6110919C2CEF75B4008E4977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6110919E2CEF75B4008E4977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		611092302CEF7635008E4977 /* CGContext+GraphLines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGContext+GraphLines.swift"; sourceTree = "<group>"; };
+		611092312CEF7635008E4977 /* GraphSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphSegment.swift; sourceTree = "<group>"; };
+		611092322CEF7635008E4977 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		611092342CEF7635008E4977 /* BB8Toy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BB8Toy.swift; sourceTree = "<group>"; };
+		611092352CEF7635008E4977 /* SensorControlV1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorControlV1.swift; sourceTree = "<group>"; };
+		611092362CEF7635008E4977 /* SpheroV1Toy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpheroV1Toy.swift; sourceTree = "<group>"; };
+		611092372CEF7635008E4977 /* SpheroV1ToyCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpheroV1ToyCore.swift; sourceTree = "<group>"; };
+		611092382CEF7635008E4977 /* SPRKToy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPRKToy.swift; sourceTree = "<group>"; };
+		6110923A2CEF7635008E4977 /* BB9EToy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BB9EToy.swift; sourceTree = "<group>"; };
+		6110923B2CEF7635008E4977 /* BoltToy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoltToy.swift; sourceTree = "<group>"; };
+		6110923C2CEF7635008E4977 /* MiniToy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniToy.swift; sourceTree = "<group>"; };
+		6110923D2CEF7635008E4977 /* R2D2Toy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R2D2Toy.swift; sourceTree = "<group>"; };
+		6110923E2CEF7635008E4977 /* SensorControlV2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorControlV2.swift; sourceTree = "<group>"; };
+		6110923F2CEF7635008E4977 /* SpheroV2Toy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpheroV2Toy.swift; sourceTree = "<group>"; };
+		611092402CEF7635008E4977 /* SpheroV2ToyCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpheroV2ToyCore.swift; sourceTree = "<group>"; };
+		611092422CEF7635008E4977 /* SensorControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorControl.swift; sourceTree = "<group>"; };
+		611092432CEF7635008E4977 /* Toy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toy.swift; sourceTree = "<group>"; };
+		611092442CEF7635008E4977 /* ToyProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToyProtocols.swift; sourceTree = "<group>"; };
+		611092462CEF7635008E4977 /* ToyBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToyBox.swift; sourceTree = "<group>"; };
+		611092482CEF7635008E4977 /* CBUUID+SpheroUUIDs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CBUUID+SpheroUUIDs.swift"; sourceTree = "<group>"; };
+		6110924A2CEF7635008E4977 /* CollisionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollisionData.swift; sourceTree = "<group>"; };
+		6110924B2CEF7635008E4977 /* PowerStateResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowerStateResponse.swift; sourceTree = "<group>"; };
+		6110924C2CEF7635008E4977 /* SensorCommandResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorCommandResponse.swift; sourceTree = "<group>"; };
+		6110924D2CEF7635008E4977 /* SensorCommandResponseV2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorCommandResponseV2.swift; sourceTree = "<group>"; };
+		6110924E2CEF7635008E4977 /* SensorMaskCommandResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorMaskCommandResponse.swift; sourceTree = "<group>"; };
+		6110924F2CEF7635008E4977 /* ShouldActionCompleteResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShouldActionCompleteResponse.swift; sourceTree = "<group>"; };
+		611092502CEF7635008E4977 /* VersionsCommandResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionsCommandResponse.swift; sourceTree = "<group>"; };
+		611092522CEF7635008E4977 /* CommandV1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandV1.swift; sourceTree = "<group>"; };
+		611092532CEF7635008E4977 /* CommandV1Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandV1Operation.swift; sourceTree = "<group>"; };
+		611092542CEF7635008E4977 /* CommandV1Sequencer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandV1Sequencer.swift; sourceTree = "<group>"; };
+		611092562CEF7635008E4977 /* CommandOperationV2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandOperationV2.swift; sourceTree = "<group>"; };
+		611092572CEF7635008E4977 /* CommandSequencerV2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandSequencerV2.swift; sourceTree = "<group>"; };
+		611092582CEF7635008E4977 /* CommandV2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandV2.swift; sourceTree = "<group>"; };
+		6110925A2CEF7635008E4977 /* SensorUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorUtils.swift; sourceTree = "<group>"; };
+		6110925C2CEF7635008E4977 /* Color+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Utils.swift"; sourceTree = "<group>"; };
+		6110925D2CEF7635008E4977 /* Double+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Utils.swift"; sourceTree = "<group>"; };
+		6110925E2CEF7635008E4977 /* SDKUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDKUtils.swift; sourceTree = "<group>"; };
+		6110925F2CEF7635008E4977 /* String+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		611092612CEF7635008E4977 /* SharedToyBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedToyBox.swift; sourceTree = "<group>"; };
+		611092652CEF7635008E4977 /* LocatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocatorViewController.swift; sourceTree = "<group>"; };
+		611092662CEF7635008E4977 /* SpheroAimingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpheroAimingViewController.swift; sourceTree = "<group>"; };
+		611092672CEF7635008E4977 /* SpheroDirectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpheroDirectionViewController.swift; sourceTree = "<group>"; };
+		611092682CEF7635008E4977 /* SpheroLedsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpheroLedsViewController.swift; sourceTree = "<group>"; };
+		611092692CEF7635008E4977 /* SpheroSensorControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpheroSensorControlViewController.swift; sourceTree = "<group>"; };
+		6110929A2CEF767C008E4977 /* FFNN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFNN.swift; sourceTree = "<group>"; };
+		6110929B2CEF767C008E4977 /* FFNN+Metal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FFNN+Metal.swift"; sourceTree = "<group>"; };
+		6110929C2CEF767C008E4977 /* FFNN+Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FFNN+Storage.swift"; sourceTree = "<group>"; };
+		6110929D2CEF767C008E4977 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		6110929E2CEF767C008E4977 /* Operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operations.swift; sourceTree = "<group>"; };
+		6110929F2CEF767C008E4977 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		611092A02CEF767C008E4977 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		611092A12CEF767C008E4977 /* Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		611092AB2CEF768C008E4977 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6110918A2CEF75B2008E4977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		611091842CEF75B2008E4977 = {
+			isa = PBXGroup;
+			children = (
+				6110918F2CEF75B2008E4977 /* SpheroStarte */,
+				6110918E2CEF75B2008E4977 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6110918E2CEF75B2008E4977 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6110918D2CEF75B2008E4977 /* SpheroStarte.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6110918F2CEF75B2008E4977 /* SpheroStarte */ = {
+			isa = PBXGroup;
+			children = (
+				6110926B2CEF7635008E4977 /* SpheroStarter */,
+				611091902CEF75B2008E4977 /* AppDelegate.swift */,
+				611091922CEF75B2008E4977 /* SceneDelegate.swift */,
+				611091942CEF75B2008E4977 /* ViewController.swift */,
+				611091962CEF75B2008E4977 /* Main.storyboard */,
+				611091992CEF75B4008E4977 /* Assets.xcassets */,
+				6110919B2CEF75B4008E4977 /* LaunchScreen.storyboard */,
+				6110919E2CEF75B4008E4977 /* Info.plist */,
+			);
+			path = SpheroStarte;
+			sourceTree = "<group>";
+		};
+		611092332CEF7635008E4977 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				611092302CEF7635008E4977 /* CGContext+GraphLines.swift */,
+				611092312CEF7635008E4977 /* GraphSegment.swift */,
+				611092322CEF7635008E4977 /* GraphView.swift */,
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		611092392CEF7635008E4977 /* V1Toys */ = {
+			isa = PBXGroup;
+			children = (
+				611092342CEF7635008E4977 /* BB8Toy.swift */,
+				611092352CEF7635008E4977 /* SensorControlV1.swift */,
+				611092362CEF7635008E4977 /* SpheroV1Toy.swift */,
+				611092372CEF7635008E4977 /* SpheroV1ToyCore.swift */,
+				611092382CEF7635008E4977 /* SPRKToy.swift */,
+			);
+			path = V1Toys;
+			sourceTree = "<group>";
+		};
+		611092412CEF7635008E4977 /* V2Toys */ = {
+			isa = PBXGroup;
+			children = (
+				6110923A2CEF7635008E4977 /* BB9EToy.swift */,
+				6110923B2CEF7635008E4977 /* BoltToy.swift */,
+				6110923C2CEF7635008E4977 /* MiniToy.swift */,
+				6110923D2CEF7635008E4977 /* R2D2Toy.swift */,
+				6110923E2CEF7635008E4977 /* SensorControlV2.swift */,
+				6110923F2CEF7635008E4977 /* SpheroV2Toy.swift */,
+				611092402CEF7635008E4977 /* SpheroV2ToyCore.swift */,
+			);
+			path = V2Toys;
+			sourceTree = "<group>";
+		};
+		611092452CEF7635008E4977 /* Toy */ = {
+			isa = PBXGroup;
+			children = (
+				611092392CEF7635008E4977 /* V1Toys */,
+				611092412CEF7635008E4977 /* V2Toys */,
+				611092422CEF7635008E4977 /* SensorControl.swift */,
+				611092432CEF7635008E4977 /* Toy.swift */,
+				611092442CEF7635008E4977 /* ToyProtocols.swift */,
+			);
+			path = Toy;
+			sourceTree = "<group>";
+		};
+		611092472CEF7635008E4977 /* ToyBox */ = {
+			isa = PBXGroup;
+			children = (
+				611092462CEF7635008E4977 /* ToyBox.swift */,
+			);
+			path = ToyBox;
+			sourceTree = "<group>";
+		};
+		611092492CEF7635008E4977 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				611092452CEF7635008E4977 /* Toy */,
+				611092472CEF7635008E4977 /* ToyBox */,
+				611092482CEF7635008E4977 /* CBUUID+SpheroUUIDs.swift */,
+			);
+			path = BLE;
+			sourceTree = "<group>";
+		};
+		611092512CEF7635008E4977 /* CommandResponses */ = {
+			isa = PBXGroup;
+			children = (
+				6110924A2CEF7635008E4977 /* CollisionData.swift */,
+				6110924B2CEF7635008E4977 /* PowerStateResponse.swift */,
+				6110924C2CEF7635008E4977 /* SensorCommandResponse.swift */,
+				6110924D2CEF7635008E4977 /* SensorCommandResponseV2.swift */,
+				6110924E2CEF7635008E4977 /* SensorMaskCommandResponse.swift */,
+				6110924F2CEF7635008E4977 /* ShouldActionCompleteResponse.swift */,
+				611092502CEF7635008E4977 /* VersionsCommandResponse.swift */,
+			);
+			path = CommandResponses;
+			sourceTree = "<group>";
+		};
+		611092552CEF7635008E4977 /* CommandV1 */ = {
+			isa = PBXGroup;
+			children = (
+				611092522CEF7635008E4977 /* CommandV1.swift */,
+				611092532CEF7635008E4977 /* CommandV1Operation.swift */,
+				611092542CEF7635008E4977 /* CommandV1Sequencer.swift */,
+			);
+			path = CommandV1;
+			sourceTree = "<group>";
+		};
+		611092592CEF7635008E4977 /* CommandV2 */ = {
+			isa = PBXGroup;
+			children = (
+				611092562CEF7635008E4977 /* CommandOperationV2.swift */,
+				611092572CEF7635008E4977 /* CommandSequencerV2.swift */,
+				611092582CEF7635008E4977 /* CommandV2.swift */,
+			);
+			path = CommandV2;
+			sourceTree = "<group>";
+		};
+		6110925B2CEF7635008E4977 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				611092512CEF7635008E4977 /* CommandResponses */,
+				611092552CEF7635008E4977 /* CommandV1 */,
+				611092592CEF7635008E4977 /* CommandV2 */,
+				6110925A2CEF7635008E4977 /* SensorUtils.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		611092602CEF7635008E4977 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				611092492CEF7635008E4977 /* BLE */,
+				6110925B2CEF7635008E4977 /* Commands */,
+				6110925C2CEF7635008E4977 /* Color+Utils.swift */,
+				6110925D2CEF7635008E4977 /* Double+Utils.swift */,
+				6110925E2CEF7635008E4977 /* SDKUtils.swift */,
+				6110925F2CEF7635008E4977 /* String+Utils.swift */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		611092622CEF7635008E4977 /* SpheroSDK */ = {
+			isa = PBXGroup;
+			children = (
+				611092602CEF7635008E4977 /* SDK */,
+				611092612CEF7635008E4977 /* SharedToyBox.swift */,
+			);
+			path = SpheroSDK;
+			sourceTree = "<group>";
+		};
+		6110926B2CEF7635008E4977 /* SpheroStarter */ = {
+			isa = PBXGroup;
+			children = (
+				611092AB2CEF768C008E4977 /* Helper.swift */,
+				611092A22CEF767C008E4977 /* NeuralNet */,
+				611092332CEF7635008E4977 /* Graph */,
+				611092622CEF7635008E4977 /* SpheroSDK */,
+				611092652CEF7635008E4977 /* LocatorViewController.swift */,
+				611092662CEF7635008E4977 /* SpheroAimingViewController.swift */,
+				611092672CEF7635008E4977 /* SpheroDirectionViewController.swift */,
+				611092682CEF7635008E4977 /* SpheroLedsViewController.swift */,
+				611092692CEF7635008E4977 /* SpheroSensorControlViewController.swift */,
+			);
+			path = SpheroStarter;
+			sourceTree = "<group>";
+		};
+		611092A22CEF767C008E4977 /* NeuralNet */ = {
+			isa = PBXGroup;
+			children = (
+				6110929A2CEF767C008E4977 /* FFNN.swift */,
+				6110929B2CEF767C008E4977 /* FFNN+Metal.swift */,
+				6110929C2CEF767C008E4977 /* FFNN+Storage.swift */,
+				6110929D2CEF767C008E4977 /* Matrix.swift */,
+				6110929E2CEF767C008E4977 /* Operations.swift */,
+				6110929F2CEF767C008E4977 /* Random.swift */,
+				611092A02CEF767C008E4977 /* Storage.swift */,
+				611092A12CEF767C008E4977 /* Vector.swift */,
+			);
+			path = NeuralNet;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6110918C2CEF75B2008E4977 /* SpheroStarte */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 611091A12CEF75B4008E4977 /* Build configuration list for PBXNativeTarget "SpheroStarte" */;
+			buildPhases = (
+				611091892CEF75B2008E4977 /* Sources */,
+				6110918A2CEF75B2008E4977 /* Frameworks */,
+				6110918B2CEF75B2008E4977 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpheroStarte;
+			productName = SpheroStarte;
+			productReference = 6110918D2CEF75B2008E4977 /* SpheroStarte.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		611091852CEF75B2008E4977 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					6110918C2CEF75B2008E4977 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 611091882CEF75B2008E4977 /* Build configuration list for PBXProject "SpheroStarte" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 611091842CEF75B2008E4977;
+			productRefGroup = 6110918E2CEF75B2008E4977 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6110918C2CEF75B2008E4977 /* SpheroStarte */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6110918B2CEF75B2008E4977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6110919A2CEF75B4008E4977 /* Assets.xcassets in Resources */,
+				6110919D2CEF75B4008E4977 /* Base in Resources */,
+				611091982CEF75B2008E4977 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		611091892CEF75B2008E4977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				611092792CEF7635008E4977 /* SpheroV2Toy.swift in Sources */,
+				611092A52CEF767C008E4977 /* FFNN+Storage.swift in Sources */,
+				611092732CEF7635008E4977 /* SPRKToy.swift in Sources */,
+				611092762CEF7635008E4977 /* MiniToy.swift in Sources */,
+				6110927F2CEF7635008E4977 /* CBUUID+SpheroUUIDs.swift in Sources */,
+				611092802CEF7635008E4977 /* CollisionData.swift in Sources */,
+				6110926C2CEF7635008E4977 /* CGContext+GraphLines.swift in Sources */,
+				611092AC2CEF768D008E4977 /* Helper.swift in Sources */,
+				611092822CEF7635008E4977 /* SensorCommandResponse.swift in Sources */,
+				611092782CEF7635008E4977 /* SensorControlV2.swift in Sources */,
+				611092AA2CEF767C008E4977 /* Vector.swift in Sources */,
+				611092892CEF7635008E4977 /* CommandV1Sequencer.swift in Sources */,
+				611092742CEF7635008E4977 /* BB9EToy.swift in Sources */,
+				6110927B2CEF7635008E4977 /* SensorControl.swift in Sources */,
+				611092882CEF7635008E4977 /* CommandV1Operation.swift in Sources */,
+				611092832CEF7635008E4977 /* SensorCommandResponseV2.swift in Sources */,
+				6110926D2CEF7635008E4977 /* GraphSegment.swift in Sources */,
+				611092A62CEF767C008E4977 /* Matrix.swift in Sources */,
+				611092702CEF7635008E4977 /* SensorControlV1.swift in Sources */,
+				611092852CEF7635008E4977 /* ShouldActionCompleteResponse.swift in Sources */,
+				611091952CEF75B2008E4977 /* ViewController.swift in Sources */,
+				6110927E2CEF7635008E4977 /* ToyBox.swift in Sources */,
+				6110926F2CEF7635008E4977 /* BB8Toy.swift in Sources */,
+				6110928E2CEF7635008E4977 /* Color+Utils.swift in Sources */,
+				611092862CEF7635008E4977 /* VersionsCommandResponse.swift in Sources */,
+				611092722CEF7635008E4977 /* SpheroV1ToyCore.swift in Sources */,
+				611092962CEF7635008E4977 /* SpheroDirectionViewController.swift in Sources */,
+				611092A82CEF767C008E4977 /* Random.swift in Sources */,
+				6110927C2CEF7635008E4977 /* Toy.swift in Sources */,
+				611092A72CEF767C008E4977 /* Operations.swift in Sources */,
+				611092972CEF7635008E4977 /* SpheroLedsViewController.swift in Sources */,
+				611091912CEF75B2008E4977 /* AppDelegate.swift in Sources */,
+				6110928F2CEF7635008E4977 /* Double+Utils.swift in Sources */,
+				611092952CEF7635008E4977 /* SpheroAimingViewController.swift in Sources */,
+				611092982CEF7635008E4977 /* SpheroSensorControlViewController.swift in Sources */,
+				611092A92CEF767C008E4977 /* Storage.swift in Sources */,
+				611092872CEF7635008E4977 /* CommandV1.swift in Sources */,
+				6110927A2CEF7635008E4977 /* SpheroV2ToyCore.swift in Sources */,
+				6110928D2CEF7635008E4977 /* SensorUtils.swift in Sources */,
+				611092A32CEF767C008E4977 /* FFNN.swift in Sources */,
+				611092942CEF7635008E4977 /* LocatorViewController.swift in Sources */,
+				611092902CEF7635008E4977 /* SDKUtils.swift in Sources */,
+				6110927D2CEF7635008E4977 /* ToyProtocols.swift in Sources */,
+				611091932CEF75B2008E4977 /* SceneDelegate.swift in Sources */,
+				611092752CEF7635008E4977 /* BoltToy.swift in Sources */,
+				611092912CEF7635008E4977 /* String+Utils.swift in Sources */,
+				611092712CEF7635008E4977 /* SpheroV1Toy.swift in Sources */,
+				6110928C2CEF7635008E4977 /* CommandV2.swift in Sources */,
+				6110928A2CEF7635008E4977 /* CommandOperationV2.swift in Sources */,
+				6110928B2CEF7635008E4977 /* CommandSequencerV2.swift in Sources */,
+				6110926E2CEF7635008E4977 /* GraphView.swift in Sources */,
+				611092A42CEF767C008E4977 /* FFNN+Metal.swift in Sources */,
+				611092812CEF7635008E4977 /* PowerStateResponse.swift in Sources */,
+				611092922CEF7635008E4977 /* SharedToyBox.swift in Sources */,
+				611092842CEF7635008E4977 /* SensorMaskCommandResponse.swift in Sources */,
+				611092772CEF7635008E4977 /* R2D2Toy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		611091962CEF75B2008E4977 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				611091972CEF75B2008E4977 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6110919B2CEF75B4008E4977 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6110919C2CEF75B4008E4977 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6110919F2CEF75B4008E4977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		611091A02CEF75B4008E4977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		611091A22CEF75B4008E4977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2K76W33ZC2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpheroStarte/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = laly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		611091A32CEF75B4008E4977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2K76W33ZC2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpheroStarte/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = laly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		611091882CEF75B2008E4977 /* Build configuration list for PBXProject "SpheroStarte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6110919F2CEF75B4008E4977 /* Debug */,
+				611091A02CEF75B4008E4977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		611091A12CEF75B4008E4977 /* Build configuration list for PBXNativeTarget "SpheroStarte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				611091A22CEF75B4008E4977 /* Debug */,
+				611091A32CEF75B4008E4977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 611091852CEF75B2008E4977 /* Project object */;
+}
