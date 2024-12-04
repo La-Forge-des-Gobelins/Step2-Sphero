@@ -80,7 +80,7 @@ class SpheroSensorControlViewController: UIViewController {
                         // ---------- Seuil pour détecter un impact (à ajuster selon les tests)
                         
 
-                        if absSum > 2.5 {
+                        if absSum > 1.5 {
                             print("Impact détecté !")
                             
                             // Ajouter ici du code pour notifier l'utilisateur ou afficher une alerte

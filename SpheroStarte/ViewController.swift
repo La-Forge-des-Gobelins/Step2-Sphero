@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController {
+    
+    @ObservedObject var WSClient = WebSocketClient.instance
     
     var impactCount = 0
     
@@ -23,6 +26,9 @@ class ViewController: UIViewController {
                 print("Connection failed: \(String(describing: err))")
             }
         }
+       
+        WSClient.sendText(route: "say", data: "Je suis connecté en websocket au serveur")
+        
     }
     
     

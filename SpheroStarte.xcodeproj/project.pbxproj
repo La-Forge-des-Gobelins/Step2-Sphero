@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B2751332D00420400B8C2F6 /* NWWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 2B2751322D00420400B8C2F6 /* NWWebSocket */; };
+		2B2751352D00421C00B8C2F6 /* WebSocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2751342D00421C00B8C2F6 /* WebSocketClient.swift */; };
 		611091912CEF75B2008E4977 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611091902CEF75B2008E4977 /* AppDelegate.swift */; };
 		611091932CEF75B2008E4977 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611091922CEF75B2008E4977 /* SceneDelegate.swift */; };
 		611091952CEF75B2008E4977 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611091942CEF75B2008E4977 /* ViewController.swift */; };
@@ -69,6 +71,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B2751342D00421C00B8C2F6 /* WebSocketClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketClient.swift; sourceTree = "<group>"; };
 		6110918D2CEF75B2008E4977 /* SpheroStarte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpheroStarte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		611091902CEF75B2008E4977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		611091922CEF75B2008E4977 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B2751332D00420400B8C2F6 /* NWWebSocket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +170,7 @@
 				611091902CEF75B2008E4977 /* AppDelegate.swift */,
 				611091922CEF75B2008E4977 /* SceneDelegate.swift */,
 				611091942CEF75B2008E4977 /* ViewController.swift */,
+				2B2751342D00421C00B8C2F6 /* WebSocketClient.swift */,
 				611091962CEF75B2008E4977 /* Main.storyboard */,
 				611091992CEF75B4008E4977 /* Assets.xcassets */,
 				6110919B2CEF75B4008E4977 /* LaunchScreen.storyboard */,
@@ -382,6 +387,9 @@
 				Base,
 			);
 			mainGroup = 611091842CEF75B2008E4977;
+			packageReferences = (
+				2B2751312D00420400B8C2F6 /* XCRemoteSwiftPackageReference "NWWebSocket" */,
+			);
 			productRefGroup = 6110918E2CEF75B2008E4977 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -435,6 +443,7 @@
 				6110928E2CEF7635008E4977 /* Color+Utils.swift in Sources */,
 				611092862CEF7635008E4977 /* VersionsCommandResponse.swift in Sources */,
 				611092722CEF7635008E4977 /* SpheroV1ToyCore.swift in Sources */,
+				2B2751352D00421C00B8C2F6 /* WebSocketClient.swift in Sources */,
 				611092962CEF7635008E4977 /* SpheroDirectionViewController.swift in Sources */,
 				611092A82CEF767C008E4977 /* Random.swift in Sources */,
 				6110927C2CEF7635008E4977 /* Toy.swift in Sources */,
@@ -693,6 +702,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2B2751312D00420400B8C2F6 /* XCRemoteSwiftPackageReference "NWWebSocket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pusher/NWWebSocket";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2B2751322D00420400B8C2F6 /* NWWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B2751312D00420400B8C2F6 /* XCRemoteSwiftPackageReference "NWWebSocket" */;
+			productName = NWWebSocket;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 611091852CEF75B2008E4977 /* Project object */;
 }
