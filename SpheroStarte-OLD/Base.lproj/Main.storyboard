@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Ec-dx-No1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MLY-jm-esL">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -63,34 +63,116 @@
             </objects>
             <point key="canvasLocation" x="-234.35114503816794" y="-677.46478873239437"/>
         </scene>
+        <!--Sensor-->
+        <scene sceneID="Gzy-hZ-qL9">
+            <objects>
+                <viewController id="MLY-jm-esL" customClass="SpheroSensorControlViewController" customModule="SpheroStarte" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IMt-dY-1DO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mWG-Tl-bRP" customClass="GraphView" customModule="SpheroStarte" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="536" width="393" height="237"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="237" id="u4V-vQ-9wD"/>
+                                </constraints>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qda-NX-TAg">
+                                <rect key="frame" x="0.0" y="51" width="393" height="32"/>
+                                <segments>
+                                    <segment title="Carre"/>
+                                    <segment title="Triangle"/>
+                                    <segment title="Rond"/>
+                                </segments>
+                                <connections>
+                                    <action selector="startButtonClicked:" destination="MLY-jm-esL" eventType="valueChanged" id="09Y-rc-o1k"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GFK-NH-ZFH" customClass="GraphView" customModule="SpheroStarte" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="117" width="393" height="166"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="166" id="OeT-ZP-KOW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aac-jx-qz1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aac-jx-qz1" firstAttribute="trailing" secondItem="GFK-NH-ZFH" secondAttribute="trailing" id="003-UU-ZHu"/>
+                            <constraint firstItem="qda-NX-TAg" firstAttribute="leading" secondItem="aac-jx-qz1" secondAttribute="leading" id="MLy-lV-ctg"/>
+                            <constraint firstItem="aac-jx-qz1" firstAttribute="trailing" secondItem="qda-NX-TAg" secondAttribute="trailing" id="Shp-Pj-9OX"/>
+                            <constraint firstItem="mWG-Tl-bRP" firstAttribute="leading" secondItem="aac-jx-qz1" secondAttribute="leading" id="XxU-qL-ltP"/>
+                            <constraint firstItem="GFK-NH-ZFH" firstAttribute="top" secondItem="qda-NX-TAg" secondAttribute="bottom" constant="23" id="Zjv-ur-TmE"/>
+                            <constraint firstItem="GFK-NH-ZFH" firstAttribute="leading" secondItem="aac-jx-qz1" secondAttribute="leading" id="aji-BL-bcr"/>
+                            <constraint firstItem="aac-jx-qz1" firstAttribute="bottom" secondItem="mWG-Tl-bRP" secondAttribute="bottom" constant="20" id="bQa-b7-fum"/>
+                            <constraint firstItem="aac-jx-qz1" firstAttribute="trailing" secondItem="mWG-Tl-bRP" secondAttribute="trailing" id="nRo-Ff-A62"/>
+                            <constraint firstItem="qda-NX-TAg" firstAttribute="top" secondItem="aac-jx-qz1" secondAttribute="top" constant="17" id="onO-bY-cTy"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="startButtonClicked" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Sensor" id="A7E-aH-yAN">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Start" width="392.33333333333331" id="qEn-9k-AJP">
+                                <inset key="landscapeImageInsets" minX="0.0" minY="9" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <action selector="startButtonClicked:" destination="MLY-jm-esL" id="ba1-5y-xOd"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Train" id="x1r-if-ZBj">
+                                <connections>
+                                    <action selector="trainButtonClicked:" destination="MLY-jm-esL" id="Zp5-bD-Hlq"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Predict" id="uLh-2h-PJX">
+                                <connections>
+                                    <action selector="predictButtonClicked:" destination="MLY-jm-esL" id="g46-kM-h8K"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="acceleroChart" destination="GFK-NH-ZFH" id="VjT-o0-gYb"/>
+                        <outlet property="gyroChart" destination="mWG-Tl-bRP" id="VqV-dH-g0p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oXZ-Sw-kMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776" y="93"/>
+        </scene>
         <!--Config-->
         <scene sceneID="SsL-8a-iAC">
             <objects>
                 <viewController id="KJN-7u-w3b" customClass="SpheroAimingViewController" customModule="SpheroStarte" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vuh-9n-9hA">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="180" minValue="0.0" maxValue="360" translatesAutoresizingMaskIntoConstraints="NO" id="U5K-2d-qFR">
-                                <rect key="frame" x="14" y="154" width="365" height="31"/>
+                                <rect key="frame" x="14" y="51" width="365" height="31"/>
                                 <connections>
                                     <action selector="sliderValueChanged:" destination="KJN-7u-w3b" eventType="valueChanged" id="tSa-0S-1H9"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aiming" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHW-J9-72G">
-                                <rect key="frame" x="16" y="125" width="361" height="21"/>
+                                <rect key="frame" x="16" y="22" width="361" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xX5-PS-ing">
-                                <rect key="frame" x="16" y="221" width="361" height="577"/>
+                                <rect key="frame" x="16" y="118" width="361" height="704"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOo-bq-grB">
-                                <rect key="frame" x="16" y="192" width="361" height="21"/>
+                                <rect key="frame" x="16" y="89" width="361" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -130,11 +212,11 @@
             <objects>
                 <viewController id="msI-0I-TpD" customClass="SpheroDirectionViewController" customModule="SpheroStarte" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ogN-ND-q49">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jGH-iA-j1G">
-                                <rect key="frame" x="53.666666666666657" y="339.66666666666669" width="286" height="242.00000000000006"/>
+                                <rect key="frame" x="53.666666666666657" y="300" width="286" height="242"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iue-TZ-DDi">
                                         <rect key="frame" x="103" y="0.0" width="80" height="63"/>
@@ -212,19 +294,19 @@
                                 </constraints>
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="Toz-TV-dwv">
-                                <rect key="frame" x="14" y="196" width="362" height="136.66666666666663"/>
+                                <rect key="frame" x="14" y="93" width="362" height="200"/>
                                 <connections>
                                     <action selector="sliderValueChanged:" destination="msI-0I-TpD" eventType="valueChanged" id="FP2-vM-1z0"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="180" minValue="0.0" maxValue="360" translatesAutoresizingMaskIntoConstraints="NO" id="a7m-Zi-mjV">
-                                <rect key="frame" x="15" y="589.66666666666663" width="362" height="201.33333333333337"/>
+                                <rect key="frame" x="15" y="550" width="362" height="265"/>
                                 <connections>
                                     <action selector="headingValueChanged:" destination="msI-0I-TpD" eventType="valueChanged" id="ogJ-gu-8mG"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Llp-JW-MLd">
-                                <rect key="frame" x="16" y="112" width="358" height="77"/>
+                                <rect key="frame" x="16" y="9" width="358" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="77" id="F4r-Sl-GzH"/>
                                 </constraints>
@@ -235,7 +317,7 @@ Current Heading: 0</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcx-qf-edD">
-                                <rect key="frame" x="16" y="798" width="361" height="0.0"/>
+                                <rect key="frame" x="16" y="822" width="361" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.072387332530000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -277,7 +359,7 @@ Current Heading: 0</string>
             <objects>
                 <viewController id="caC-2i-EYA" customClass="SpheroLedsViewController" customModule="SpheroStarte" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kSB-Av-Brt">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Text to display" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5b9-39-fwT">
@@ -475,82 +557,6 @@ Current Heading: 0</string>
             </objects>
             <point key="canvasLocation" x="3405.3435114503814" y="-646.47887323943667"/>
         </scene>
-        <!--Sensor-->
-        <scene sceneID="Gzy-hZ-qL9">
-            <objects>
-                <viewController id="MLY-jm-esL" customClass="SpheroSensorControlViewController" customModule="SpheroStarte" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="IMt-dY-1DO">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GFK-NH-ZFH" customClass="GraphView" customModule="SpheroStarte" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="174" width="393" height="166"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="166" id="OeT-ZP-KOW"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mWG-Tl-bRP" customClass="GraphView" customModule="SpheroStarte" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="561" width="393" height="237"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="237" id="u4V-vQ-9wD"/>
-                                </constraints>
-                            </view>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qda-NX-TAg">
-                                <rect key="frame" x="0.0" y="120" width="393" height="32"/>
-                                <segments>
-                                    <segment title="Carre"/>
-                                    <segment title="Triangle"/>
-                                    <segment title="Rond"/>
-                                </segments>
-                                <connections>
-                                    <action selector="segementedControlChanged:" destination="MLY-jm-esL" eventType="valueChanged" id="QgE-Fu-Rir"/>
-                                </connections>
-                            </segmentedControl>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="aac-jx-qz1"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="aac-jx-qz1" firstAttribute="trailing" secondItem="GFK-NH-ZFH" secondAttribute="trailing" id="003-UU-ZHu"/>
-                            <constraint firstItem="qda-NX-TAg" firstAttribute="leading" secondItem="aac-jx-qz1" secondAttribute="leading" id="MLy-lV-ctg"/>
-                            <constraint firstItem="aac-jx-qz1" firstAttribute="trailing" secondItem="qda-NX-TAg" secondAttribute="trailing" id="Shp-Pj-9OX"/>
-                            <constraint firstItem="mWG-Tl-bRP" firstAttribute="leading" secondItem="aac-jx-qz1" secondAttribute="leading" id="XxU-qL-ltP"/>
-                            <constraint firstItem="GFK-NH-ZFH" firstAttribute="top" secondItem="qda-NX-TAg" secondAttribute="bottom" constant="23" id="Zjv-ur-TmE"/>
-                            <constraint firstItem="GFK-NH-ZFH" firstAttribute="leading" secondItem="aac-jx-qz1" secondAttribute="leading" id="aji-BL-bcr"/>
-                            <constraint firstItem="aac-jx-qz1" firstAttribute="bottom" secondItem="mWG-Tl-bRP" secondAttribute="bottom" constant="20" id="bQa-b7-fum"/>
-                            <constraint firstItem="aac-jx-qz1" firstAttribute="trailing" secondItem="mWG-Tl-bRP" secondAttribute="trailing" id="nRo-Ff-A62"/>
-                            <constraint firstItem="qda-NX-TAg" firstAttribute="top" secondItem="aac-jx-qz1" secondAttribute="top" constant="17" id="onO-bY-cTy"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Sensor" id="A7E-aH-yAN">
-                        <rightBarButtonItems>
-                            <barButtonItem title="Start" id="qEn-9k-AJP">
-                                <connections>
-                                    <action selector="startButtonClicked:" destination="MLY-jm-esL" id="1AV-Yk-ffG"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Train" id="x1r-if-ZBj">
-                                <connections>
-                                    <action selector="trainButtonClicked:" destination="MLY-jm-esL" id="Zp5-bD-Hlq"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Predict" id="uLh-2h-PJX">
-                                <connections>
-                                    <action selector="predictButtonClicked:" destination="MLY-jm-esL" id="g46-kM-h8K"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="acceleroChart" destination="GFK-NH-ZFH" id="VjT-o0-gYb"/>
-                        <outlet property="gyroChart" destination="mWG-Tl-bRP" id="VqV-dH-g0p"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oXZ-Sw-kMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="776" y="93"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="b6p-gp-3eU">
             <objects>
@@ -562,7 +568,7 @@ Current Heading: 0</string>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ByJ-p5-G55" kind="relationship" relationship="rootViewController" id="FFJ-Cs-tfQ"/>
+                        <segue destination="MLY-jm-esL" kind="relationship" relationship="rootViewController" id="aLf-IQ-ih3"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2gf-lf-j02" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -570,6 +576,9 @@ Current Heading: 0</string>
             <point key="canvasLocation" x="-1161.0687022900763" y="-677.46478873239437"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="G4a-dX-UqI"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Fleche_Arriere" width="250" height="250"/>
         <image name="Fleche_Avant" width="250" height="250"/>

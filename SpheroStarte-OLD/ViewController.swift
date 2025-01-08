@@ -27,7 +27,7 @@ class ViewController: UIViewController {
             }
         }
        
-        WSClient.sendText(route: "say", data: "Je suis connecté en websocket au serveur")
+        WSClient.sendText(route: "step2", data: "Je suis connecté en websocket au serveur")
         
     }
     

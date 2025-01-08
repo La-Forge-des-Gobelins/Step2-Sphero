@@ -9,8 +9,35 @@
 import UIKit
 import simd
 import AVFoundation
+import SwiftUI
 
 class SpheroSensorControlViewController: UIViewController {
+    
+    
+    @ObservedObject var WSClient = WebSocketClient.instance
+    
+    var impactCount = 0
+    
+    
+    
+    // Fonction d'affichage de l'alerte
+    func displayImpactAlert() {
+        let alert = UIAlertController(title: "Impact détecté", message: "Un coup a été détecté sur le Sphero.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true)
+    }
+    
+    // Configuration du SpheroSensorControlViewController avec la closure
+    func setupSpheroController() {
+        let spheroController = SpheroSensorControlViewController()
+        spheroController.onImpactDetected = { [weak self] in
+            self!.impactCount += 1
+            print("Nombre d'impacts : \(self!.impactCount)")
+            
+            self?.displayImpactAlert()
+        }
+    }
+    
     
     enum Classes:Int {
         case Carre,Triangle,Rond
@@ -41,6 +68,23 @@ class SpheroSensorControlViewController: UIViewController {
         
         
         // Do any additional setup after loading the view.
+        print("Searching")
+        SharedToyBox.instance.searchForBoltsNamed(["SB-8C49"]) { err in //SB-8C49
+            if err == nil {
+                print("Connected")
+                
+                self.isRecording.toggle()
+                print("### Debug recording : \(self.isRecording)")
+                
+            } else {
+                print("Connection failed: \(String(describing: err))")
+            }
+        }
+        
+        WSClient.sendText(route: "step2", data: "Je suis connecté en websocket au serveur")
+        
+        
+        // Do any additional setup after loading the view.
         neuralNet = FFNN(inputs: 1800, hidden: 20, outputs: 3, learningRate: 0.3, momentum: 0.2, weights: nil, activationFunction: .Sigmoid, errorFunction:.crossEntropy(average: false))// .default(average: true))
         
         
@@ -59,10 +103,10 @@ class SpheroSensorControlViewController: UIViewController {
                 
                 if self.isRecording || self.isPredicting {
                     
-                    
-                    
-                    
+                    print("### Debug -> inside isrecording and ispredicting")
+
                     if let acceleration = data.accelerometer?.filteredAcceleration {
+                        print("### Debug -> data accelero : \(acceleration)")
                         // PAS BIEN!!!
                         currentAccData.append(contentsOf: [acceleration.x!, acceleration.y!, acceleration.z!])
                         //                        if acceleration.x! >= 0.65 {
@@ -72,7 +116,7 @@ class SpheroSensorControlViewController: UIViewController {
                         //                        }
                         let absSum = abs(acceleration.x!)+abs(acceleration.y!)+abs(acceleration.z!)
                         
-                        
+                        // MARK: - DETECTION IMPACT
                         // --------------------- DETECTION IMPACT ---------------------
                         // --------------------- DETECTION IMPACT ---------------------
                         
@@ -80,14 +124,21 @@ class SpheroSensorControlViewController: UIViewController {
                         // ---------- Seuil pour détecter un impact (à ajuster selon les tests)
                         
 
-                        if absSum > 1.5 {
-                            print("Impact détecté !")
+                        if abs(acceleration.z!) > 1.2 {
+                            print("Z -- Impact détecté !")
                             
                             // Ajouter ici du code pour notifier l'utilisateur ou afficher une alerte
                            
                             self.onImpactDetected?()
                         }
                         
+                        if absSum > 1.1 {
+                            print("Total -- Impact détecté !")
+                            
+                            // Ajouter ici du code pour notifier l'utilisateur ou afficher une alerte
+                           
+                            self.onImpactDetected?()
+                        }
                         
                         // --------------------- DETECTION IMPACT ---------------------
                         // --------------------- DETECTION IMPACT ---------------------

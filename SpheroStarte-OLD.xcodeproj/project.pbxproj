@@ -72,7 +72,7 @@
 
 /* Begin PBXFileReference section */
 		2B2751342D00421C00B8C2F6 /* WebSocketClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketClient.swift; sourceTree = "<group>"; };
-		6110918D2CEF75B2008E4977 /* SpheroStarte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpheroStarte.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6110918D2CEF75B2008E4977 /* SpheroStarte-OLD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpheroStarte-OLD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		611091902CEF75B2008E4977 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		611091922CEF75B2008E4977 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		611091942CEF75B2008E4977 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 		611091842CEF75B2008E4977 = {
 			isa = PBXGroup;
 			children = (
-				6110918F2CEF75B2008E4977 /* SpheroStarte */,
+				6110918F2CEF75B2008E4977 /* SpheroStarte-OLD */,
 				6110918E2CEF75B2008E4977 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -158,12 +158,12 @@
 		6110918E2CEF75B2008E4977 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6110918D2CEF75B2008E4977 /* SpheroStarte.app */,
+				6110918D2CEF75B2008E4977 /* SpheroStarte-OLD.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6110918F2CEF75B2008E4977 /* SpheroStarte */ = {
+		6110918F2CEF75B2008E4977 /* SpheroStarte-OLD */ = {
 			isa = PBXGroup;
 			children = (
 				6110926B2CEF7635008E4977 /* SpheroStarter */,
@@ -176,7 +176,7 @@
 				6110919B2CEF75B4008E4977 /* LaunchScreen.storyboard */,
 				6110919E2CEF75B4008E4977 /* Info.plist */,
 			);
-			path = SpheroStarte;
+			path = "SpheroStarte-OLD";
 			sourceTree = "<group>";
 		};
 		611092332CEF7635008E4977 /* Graph */ = {
@@ -346,9 +346,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6110918C2CEF75B2008E4977 /* SpheroStarte */ = {
+		6110918C2CEF75B2008E4977 /* SpheroStarte-OLD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 611091A12CEF75B4008E4977 /* Build configuration list for PBXNativeTarget "SpheroStarte" */;
+			buildConfigurationList = 611091A12CEF75B4008E4977 /* Build configuration list for PBXNativeTarget "SpheroStarte-OLD" */;
 			buildPhases = (
 				611091892CEF75B2008E4977 /* Sources */,
 				6110918A2CEF75B2008E4977 /* Frameworks */,
@@ -358,9 +358,9 @@
 			);
 			dependencies = (
 			);
-			name = SpheroStarte;
+			name = "SpheroStarte-OLD";
 			productName = SpheroStarte;
-			productReference = 6110918D2CEF75B2008E4977 /* SpheroStarte.app */;
+			productReference = 6110918D2CEF75B2008E4977 /* SpheroStarte-OLD.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -378,7 +378,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 611091882CEF75B2008E4977 /* Build configuration list for PBXProject "SpheroStarte" */;
+			buildConfigurationList = 611091882CEF75B2008E4977 /* Build configuration list for PBXProject "SpheroStarte-OLD" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -394,7 +394,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6110918C2CEF75B2008E4977 /* SpheroStarte */,
+				6110918C2CEF75B2008E4977 /* SpheroStarte-OLD */,
 			);
 		};
 /* End PBXProject section */
@@ -683,7 +683,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		611091882CEF75B2008E4977 /* Build configuration list for PBXProject "SpheroStarte" */ = {
+		611091882CEF75B2008E4977 /* Build configuration list for PBXProject "SpheroStarte-OLD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6110919F2CEF75B4008E4977 /* Debug */,
@@ -692,7 +692,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		611091A12CEF75B4008E4977 /* Build configuration list for PBXNativeTarget "SpheroStarte" */ = {
+		611091A12CEF75B4008E4977 /* Build configuration list for PBXNativeTarget "SpheroStarte-OLD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				611091A22CEF75B4008E4977 /* Debug */,
